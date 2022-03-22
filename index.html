@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ed-Kart Online Shopping </title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
+  <link rel="stylesheet" href="CSS/util.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="logo ">
+      </div>
+      <ul>
+        <li> <a href="index.html"> HOME</a> </li>
+        <li> <a href="index.html"> CONTACT US</a></li>
+        <li> <a href="index.html"> ABOUT US</a> </li>
+        <li> <a href="index.html"> Cart</a> </li>
+      </ul>
+      <div class="search"> <input type="text" class="text" id="" placeholder="Search Here">
+        <button class="btn">Search</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="slider">
+        <img src="bg.jpg" alt="">
+      </div>
+      <div class="card">
+        <h2 class="my-2">Cricket Products</h2>
+        <div class="cards">
+          <div class="carditem">
+
+
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">Cricket Bats </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/71mZTTHb3HL._SL1000_.jpg">
+
+            <div class="lines">
+              <p class=".text-center my-3">Cricket Balls </p>
+              <p class=".text-center my-3">Min 20% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/51iOdiNRqTL._AC_SY1000_.jpg" alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">Cricket Stumps </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/61DIp2fEEKL._SL1200_.jpg" alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">Cricket Helmet </p>
+              <p class=".text-center my-3">Min 20% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://5.imimg.com/data5/TE/SP/MY-6614950/cricket-pads-500x500.jpg" alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">Cricket Pads </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img
+              src="https://ethlits.com/media/catalog/product/cache/1/thumbnail/4f9502202b77059316180a23e4857517/s/g/sg_radix_cricket_arm_elbow_guard_men_size_ethlits.com.jpg">
+
+            <div class="lines">
+              <p class=".text-center my-3">Sport Straps </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+        </div>
+        <h2 class="my-2">Mobile Phones</h2>
+        <div class="cards">
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/81AT+Flc+EL._AC_SL1500_.jpg" alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">Samsung Galaxy note 20 </p>
+              <p class=".text-center my-3">Min 10% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://images.macrumors.com/article-new/2022/03/iPhone-SE-3.jpg" alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">Iphone SE 3 </p>
+              <p class=".text-center my-3">Min 5% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/31rx3zPdZ1L.jpg" alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">Vivo V23 Pro </p>
+              <p class=".text-center my-3">Min 10% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img
+              src="https://www.apple.com/newsroom/images/product/iphone/geo/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_GEO_09142021_inline.jpg.large.jpg">
+
+            <div class="lines">
+              <p class=".text-center my-3">Iphone 13 pro max </p>
+              <p class=".text-center my-3">Min 5% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/61fy+u9uqPL._SX679_.jpg" alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">One plus 9 </p>
+              <p class=".text-center my-3">Min 10% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/71ee+5V4ZRL._SL1500_.jpg" alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">Google pixel 6pro </p>
+              <p class=".text-center my-3">Min 10% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+        </div>
+        <h2 class="my-2">Men's Clothing</h2>
+        <div class="cards">
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/71vp8Lec9JL._UL1500_.jpg">
+
+            <div class="lines">
+              <p class=".text-center my-3">T-Shirts </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img
+              src="https://assets.ajio.com/medias/sys_master/root/20210601/WA47/60b52f5faeb269a9e3ce92ea/-473Wx593H-441115652-mediumblue-MODEL.jpg">
+
+            <div class="lines">
+              <p class=".text-center my-3">Jeans </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img
+              src="https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw6b909ab1/original/90_DST030G-DT21_DBN9_20_BaroccoPrintChainReaction2Trainers-Sneakers-versace-online-store_4_1.jpg?sw=850&sh=1200&sm=fit">
+
+            <div class="lines">
+              <p class=".text-center my-3">Sneakers </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/71DBklVte9L._UL1200_.jpg">
+
+            <div class="lines">
+              <p class=".text-center my-3">Shirts </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img
+              src="https://assets.ajio.com/medias/sys_master/root/h08/h23/13583211724830/-473Wx593H-460438818-khaki-MODEL.jpg">
+
+            <div class="lines">
+              <p class=".text-center my-3">Trousers </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img
+              src="https://rukminim1.flixcart.com/image/332/398/kq8dua80/hat/x/7/x/free-unisex-100-cotton-foldable-bucket-beach-sun-hat-black-1-original-imag4at98kjh9tvf.jpeg?q=50">
+
+            <div class="lines">
+              <p class=".text-center my-3">Hats </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+        </div>
+        <h2 class="my-2">Toys</h2>
+        <div class="cards">
+          <div class="carditem">
+
+
+            <img src="https://img.joomcdn.net/fabbaa53fd3341d9fea5f72368e9de287b66161b_original.jpeg">
+
+            <div class="lines">
+              <p class=".text-center my-3">Remote control Cars </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/51b75RjZDfL._AC_SX425_.jpg">
+
+            <div class="lines">
+              <p class=".text-center my-3"> Toy Guns </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://m.media-amazon.com/images/I/71olYvEpf0L._SL1500_.jpg" alt="bats">
+
+            <div class="lines">
+              <p class=".text-center my-3">Soft Toys </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img
+              src="https://rukminim2.flixcart.com/image/416/416/jndhrbk0/musical-toy/6/d/b/kids-musical-toys-kids-electronic-keyboard-piano-kids-musical-original-imafaffdbvgfqhua.jpeg?q=70">
+
+            <div class="lines">
+              <p class=".text-center my-3">Musical Toys </p>
+              <p class=".text-center my-3">Min 30% Off</p>
+              <p class=".text-center my-3">Buy Now </p>
+            </div>
+          </div>
+          <div class="carditem">
+
+
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/61r9L04frPL._AC._SR360,460.jpg">
+            <p class=".text-center my-3">Toy Phones </p>
+            <p class=".text-center my-3">Min 30% Off</p>
+            <p class=".text-center my-3">Buy Now </p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+    </div>
+  </main>
+  <footer class="All-Flex-center-align">
+    <p>Copyright &copy; Ed-kart.com </p>
+  </footer>
+</body>
+
+</html>
