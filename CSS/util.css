@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu&display=swap');
 .All-Flex-center-align{
  
    display: flex;
@@ -14,14 +15,49 @@
     border: 2px solid rgba(0, 0, 0, 0.966);
     cursor: pointer;
 }
+
+
 .my-2{
     margin: 26px 0;
+
 }
 .my-3
 {
     margin: 4px 0;
 }
 
+.itemName{
+    text-align: center;
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  color: #128f85;
+  padding: 5px 0px;
+}
+.discount{
+
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: italic;
+}
+.buyBtn{
+   
+      font-size: 15px;
+      width: 100%;
+        padding: 8px 12px;
+        font-weight: 700;
+    border-radius: 6px;
+    border: 2px solid #70e9d3;
+    background: #70e9d3;
+}
+.buyBtn:hover{
+ 
+    background: #ffffff;
+    color: #70e9d3;
+
+
+}
 .text-center{
     
 }
