@@ -1,9 +1,5 @@
 @media screen  and (max-width:1000px){
     
-    
-    nav{
-        flex-direction: column;
-    }
     .carditem{
         width: 30vw;
     }
@@ -11,17 +7,26 @@
         justify-content: center;
         margin: 12px 0;
     }
-    nav ul{
-        justify-content: center;
     
+    nav ul{ 
+        right: 0;
+        position: fixed;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        top: 0;
+        background: rgba(34, 34, 34, 0.959);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
     }
-    .search input{
-        margin:  14px 18px;
-    width: 22vw;
+    nav ul .cartBtn1{
+        display: none;
+
+    }
+    nav .cartBtn2{
+        display: inline-block;
     }
     
-    nav ul {
-        height: 32px;
-    }
 
 }
