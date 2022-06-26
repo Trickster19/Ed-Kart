@@ -1,32 +1,133 @@
-@media screen  and (max-width:1000px){
-    
-    .carditem{
+@media screen and (max-width: 900px) {
+
+    .carditem {
         width: 30vw;
     }
-    .logo{
+
+    .logo {
         justify-content: center;
         margin: 12px 0;
     }
-    
-    nav ul{ 
-        right: 0;
-        position: fixed;
-        height: 100vh;
-        width: 50%;
-        flex-direction: column;
-        top: 0;
-        background: rgba(34, 34, 34, 0.959);
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
+
+    nav {
+        justify-content: space-between;
+        height: 55px;
+        margin: 0px 5px;
     }
-    nav ul .cartBtn1{
+
+    .responsive-btn {
+        display: flex;
+    }
+
+    nav ul {
+        left: 0;
+        position: fixed;
+        display: none;
+        top: 65px;
+        height: 50vh;
+        width: 100%;
+        z-index: -1000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: rgba(8, 165, 120, 0.9);
+        text-align: center;
+        padding-top: 30px;
+        transition: all 0.5s ease;
+    }
+
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid white;
+        padding-bottom: 30px;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul .cartBtn1 {
         display: none;
 
     }
-    nav .cartBtn2{
+
+    nav .cartBtn2 {
         display: inline-block;
     }
-    
 
+    nav .menu-btn {
+        display: block;
+        z-index: 999;
+
+    }
+
+    .menu-btn.active::before {
+        content: "\f00d";
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .search {
+        margin-left: 0;
+        padding: 0px 30px;
+    }
+
+}
+
+@media (max-width:750px) {
+    .slider .banner-txt .line1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .slider .banner-txt .line2 {
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width : 650px) {
+    .carditem {
+        margin: 15px 15px;
+    }
+
+    .slider .banner-txt .line1 {
+        font-size: 38px;
+        text-align: center;
+        padding: 5px 8px;
+    }
+
+    .slider .banner-txt .line2 {
+        font-size: 32px;
+        padding: 5px 20px;
+    }
+}
+
+
+
+@media (max-width : 500px) {
+
+    .slider .banner {
+        background: url('/sliderImg2.jpg') center;
+        background-size: 100% 100%;
+    }
+
+    .carditem {
+        width: 50vw;
+    }
+}
+
+@media (max-width : 450px) {
+
+    .slider .banner-txt .line1 {
+        font-size: 30px;
+        text-align: center;
+        padding: 5px 8px;
+    }
+
+    .slider .banner-txt .line2 {
+        font-size: 24px;
+    }
 }

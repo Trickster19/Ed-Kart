@@ -6,36 +6,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ed-Kart Online Shopping </title>
+  <link rel="icon" type="image" href="logoicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="CSS/util.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 
 <body>
+
+
+  <!-- navbar content -->
   <header>
     <nav>
       <div class="logo">
         <img src="logo.png" alt="logo ">
       </div>
       <ul>
-        <li> <a href="index.html"> HOME</a> </li>
+        <li> <a href="#home"> HOME</a> </li>
         <li> <a href="index.html"> CONTACT US</a></li>
         <li> <a href="index.html"> ABOUT US</a> </li>
-        <li> <a href="index.html"><i  class="fa-solid fa-cart-shopping cartBtn1"></i>
-        </a> </li>
+        <li class="cartBtn1"> <a href="index.html"><i class="fa-solid fa-bag-shopping cartBtn1"></i></a> </li>
+        <li>
+          <div class="search">
+            <input type="text" class="text" id="" placeholder="Search Here">
+            <button class="btn"><i class="fa fa-search"></i></button>
+          </div>
+        </li>
       </ul>
-      <a href="index.html"><i  class="fa-solid fa-cart-shopping cartBtn2"></i>
-      </a>
-      <div class="search"> <input type="text" class="text" id="" placeholder="Search Here">
-        <button class="btn">Search</button>
+
+      <div class="responsive-btn">
+        <a href="index.html"><i class="fa-solid fa-bag-shopping cartBtn2"></i> </a>
+        <i class="fas fa-bars menu-btn" id="menu-btn"></i>
       </div>
+
     </nav>
   </header>
-  <main>
+
+  <!-- main content -->
+
+  <main id="home">
     <div class="container">
       <div class="slider">
-        <img src="sliderImg1.jpg" alt="">
+        <div class="banner"></div>
+        <div class="banner-txt">
+          <h2 class="line1">!!! SALE On ALL PRODUCTS !!!</h2>
+          <h3 class="line2">Min 20% off </h3>
+        </div>
       </div>
       <div class="card">
         <h2 class="my-2">Cricket Products</h2>
@@ -48,9 +67,9 @@
               alt="bats">
 
             <div class="lines">
-              <p class=".text-center my-3 itemName" >Cricket Bats </p>
+              <p class=".text-center my-3 itemName">Cricket Bats </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -62,7 +81,7 @@
             <div class="lines">
               <p class=".text-center my-3   itemName">Cricket Balls </p>
               <p class=".text-center my-3  discount">Min 20% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -74,7 +93,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Cricket Stumps </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -86,7 +105,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Cricket Helmet </p>
               <p class=".text-center my-3 discount">Min 20% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -98,7 +117,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Cricket Pads </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -111,7 +130,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Sport Straps </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -126,7 +145,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Samsung Galaxy note 20 </p>
               <p class=".text-center my-3 discount">Min 10% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -138,7 +157,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Iphone SE 3 </p>
               <p class=".text-center my-3 discount">Min 5% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -150,7 +169,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Vivo V23 Pro </p>
               <p class=".text-center my-3 discount">Min 10% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -164,7 +183,7 @@
               <p class=".text-center my-3  itemName">Iphone 13 pro max </p>
               <p class=".text-center my-3 discount">Min 5% Off</p>
               <!-- <p class=".text-center my-3 buyBtn">Buy Now </p> -->
-            <button  class="buyBtn">Buy Now</button>
+              <button class="buyBtn">Buy Now</button>
             </div>
           </div>
           <div class="carditem">
@@ -175,7 +194,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">One plus 9 </p>
               <p class=".text-center my-3  discount">Min 10% Off</p>
-            <button  class="buyBtn">Buy Now</button>
+              <button class="buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -187,7 +206,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Google pixel 6pro </p>
               <p class=".text-center my-3 discount">Min 10% Off</p>
-              <button  class="buyBtn">Buy Now</button>
+              <button class="buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -202,7 +221,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">T-Shirts </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class="buyBtn">Buy Now</button>
+              <button class="buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -215,7 +234,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Jeans </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class="buyBtn">Buy Now</button>
+              <button class="buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -228,7 +247,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Sneakers </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class="buyBtn">Buy Now</button>
+              <button class="buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -240,7 +259,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Shirts </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class="buyBtn">Buy Now</button>
+              <button class="buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -253,7 +272,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Trousers </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class="buyBtn">Buy Now</button>
+              <button class="buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -266,7 +285,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Hats </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class="buyBtn">Buy Now</button>
+              <button class="buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -281,7 +300,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Remote control Cars </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -293,7 +312,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName"> Toy Guns </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -305,7 +324,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Soft Toys </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -318,7 +337,7 @@
             <div class="lines">
               <p class=".text-center my-3  itemName">Musical Toys </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button  class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn">Buy Now</button>
 
             </div>
           </div>
@@ -328,19 +347,33 @@
             <img src="https://images-eu.ssl-images-amazon.com/images/I/61r9L04frPL._AC._SR360,460.jpg">
             <p class=".text-center my-3  itemName">Toy Phones </p>
             <p class=".text-center my-3 discount">Min 30% Off</p>
-            <button  class=".text-center my-3 buyBtn">Buy Now</button>
+            <button class=".text-center my-3 buyBtn">Buy Now</button>
 
           </div>
         </div>
-        
+
       </div>
 
     </div>
     </div>
   </main>
   <footer class="All-Flex-center-align">
-    <p>Copyright &copy; Ed-kart.com </p>
+    <p>Made By Mohd Haaris Qureshi | Copyright &copy; Ed-kart.com </p>
   </footer>
+
+
+
+  <script>
+
+    document.querySelector("nav #menu-btn").addEventListener('click', function () {
+      document.querySelector("nav ul").classList.toggle("active");
+      document.querySelector("nav #menu-btn").classList.toggle("active");
+
+    });
+
+  </script>
+
+
 </body>
 
 </html>
