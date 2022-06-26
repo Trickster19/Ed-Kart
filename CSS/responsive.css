@@ -94,14 +94,14 @@
     }
 
     .slider .banner-txt .line1 {
-        font-size: 38px;
+        font-size: 35px;
         text-align: center;
         padding: 5px 8px;
     }
 
     .slider .banner-txt .line2 {
-        font-size: 32px;
-        padding: 5px 20px;
+        font-size: 18px;
+        padding: 0px 20px;
     }
 }
 

@@ -132,7 +132,7 @@ nav ul li a:hover {
 }
 
 .slider .banner {
-    background: url('/sliderImg1.jpg') center;
+    background: url("/sliderImg1.jpg") center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -143,7 +143,7 @@ nav ul li a:hover {
 .slider .banner-txt {
     box-sizing: border-box;
     padding: 10px;
-    height: 20vh;
+    height: 25vh;
     background: #0a5648;
     display: flex;
     width: 100%;
