@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ed-Kart Online Shopping </title>
-  <link rel="icon" type="image" href="logoicon.png">
+  <link rel="icon" type="image" href="CSS/logoicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +22,7 @@
   <header>
     <nav>
       <div class="logo">
-        <img src="logo.png" alt="logo ">
+        <img src="CSS/logo.png" alt="logo ">
       </div>
       <ul>
         <li> <a href="#home"> HOME</a> </li>
@@ -30,10 +30,10 @@
         <li> <a href="index.html"> ABOUT US</a> </li>
         <li class="cartBtn1"> <a href="index.html"><i class="fa-solid fa-bag-shopping cartBtn1"></i></a> </li>
         <li>
-          <div class="search">
-            <input type="text" class="text" id="" placeholder="Search Here">
-            <button class="btn"><i class="fa fa-search"></i></button>
-          </div>
+          <form class="search">
+            <input type="text" class="text" id="searchInput" placeholder="Search Here">
+            <button class="btn" id="searchBtn"><i class="fa fa-search"></i></button>
+          </form>
         </li>
       </ul>
 
@@ -53,11 +53,11 @@
         <div class="banner"></div>
         <div class="banner-txt">
           <h2 class="line1">!!! SALE On ALL PRODUCTS !!!</h2>
-          <h3 class="line2">Min 20% off </h3> 
+          <h3 class="line2">Min 20% off </h3>
         </div>
       </div>
       <div class="card">
-        <h2 class="my-2">Cricket Products</h2>
+        <h2 class="my-2" id="cricketProduct">Cricket Products</h2>
         <div class="cards">
           <div class="carditem">
 
@@ -135,7 +135,7 @@
             </div>
           </div>
         </div>
-        <h2 class="my-2">Mobile Phones</h2>
+        <h2 class="my-2" id="mobilePhone">Mobile Phones</h2>
         <div class="cards">
           <div class="carditem">
 
@@ -211,7 +211,7 @@
             </div>
           </div>
         </div>
-        <h2 class="my-2">Men's Clothing</h2>
+        <h2 class="my-2" id="mensClothing">Men's Clothing</h2>
         <div class="cards">
           <div class="carditem">
 
@@ -290,7 +290,7 @@
             </div>
           </div>
         </div>
-        <h2 class="my-2">Toys</h2>
+        <h2 class="my-2" id="Toys">Toys</h2>
         <div class="cards">
           <div class="carditem">
 
@@ -355,7 +355,7 @@
       </div>
 
     </div>
-    </div>
+
   </main>
   <footer class="All-Flex-center-align">
     <p>Made By Mohd Haaris Qureshi | Copyright &copy; Ed-kart.com </p>
@@ -369,6 +369,49 @@
       document.querySelector("nav ul").classList.toggle("active");
       document.querySelector("nav #menu-btn").classList.toggle("active");
 
+    });
+    let searchInput = document.getElementById('searchInput');
+    let searchform = document.querySelector('nav .search');
+    searchform.addEventListener('submit', function (e) {
+      let value = searchInput.value;
+      e.preventDefault();
+
+      if (value == "cricket" || value == "bat" || value == "bowl" || value == "cricket product") {
+        document.getElementById("cricketProduct").scrollIntoView({ behavior: "smooth" });
+        document.querySelector("nav ul").classList.remove("active");
+        document.querySelector("nav #menu-btn").classList.remove("active");
+        searchform.reset();
+
+      }
+      else if (value == "phone" || value == "mobile" || value == "Mobile" || value == "iphone" || value == "samsung") {
+        document.getElementById("mobilePhone").scrollIntoView({ behavior: "smooth" });
+        document.querySelector("nav ul").classList.remove("active");
+        document.querySelector("nav #menu-btn").classList.remove("active");
+        searchform.reset();
+      }
+      else if (value == "clothes" || value == "mens cloth" || value == "shirts" || value == "tshirts" || value == "pants" || value == "jeans") {
+        document.getElementById("mensClothes").scrollIntoView({ behavior: "smooth" });
+        document.querySelector("nav ul").classList.remove("active");
+        document.querySelector("nav #menu-btn").classList.remove("active");
+        searchform.reset();
+      }
+      else if (value == "toys" || value == "Toys" || value == "children toys" || value == "children") {
+       
+        document.getElementById("Toys").scrollIntoView({ behavior: "smooth" });
+        document.querySelector("nav ul").classList.remove("active");
+        document.querySelector("nav #menu-btn").classList.remove("active");
+        searchform.reset();
+
+
+      }
+
+      else
+       {
+     
+        alert("item not found");
+     
+        
+      }
     });
 
   </script>
