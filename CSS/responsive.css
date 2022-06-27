@@ -110,7 +110,7 @@
 @media (max-width : 500px) {
 
     .slider .banner {
-        background: url('/sliderImg2.jpg') center;
+        background: url('sliderImg2.jpg') center;
         background-size: 100% 100%;
     }
 
