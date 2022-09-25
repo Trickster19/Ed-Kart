@@ -94,15 +94,29 @@
     }
 
     .slider .banner-txt .line1 {
-        font-size: 35px;
+        font-size: 38px;
         text-align: center;
         padding: 5px 8px;
     }
 
     .slider .banner-txt .line2 {
-        font-size: 18px;
-        padding: 0px 20px;
+        font-size: 32px;
+        padding: 5px 20px;
     }
+
+    #product {
+        flex-direction: column;
+        height: max-content;
+    }
+
+
+    #product .prod,
+    #product .prod-details {
+        width: 100%;
+    }
+
+
+
 }
 
 

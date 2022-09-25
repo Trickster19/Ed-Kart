@@ -11,6 +11,16 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+
+}
+
+a {
+    color: #000;
+}
+
+.buyBtn:hover a {
+    color: aquamarine;
 }
 
 body {
@@ -96,7 +106,6 @@ nav ul li a:hover {
 
 .responsive-btn {
     display: none;
-    margin: auto 25px;
 }
 
 .search input {
@@ -132,7 +141,7 @@ nav ul li a:hover {
 }
 
 .slider .banner {
-    background: url("sliderImg1.jpg") center;
+    background: url('sliderImg1.jpg') center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -143,7 +152,7 @@ nav ul li a:hover {
 .slider .banner-txt {
     box-sizing: border-box;
     padding: 10px;
-    height: 25vh;
+    height: 20vh;
     background: #0a5648;
     display: flex;
     width: 100%;
@@ -165,6 +174,11 @@ nav ul li a:hover {
     font-size: 35px;
     font-family: 'Calligraffitti';
     color: #70e9d3;
+}
+
+.slider .contact-banner {
+    margin-top: 65px;
+    background-color: #10b394;
 }
 
 
@@ -229,6 +243,156 @@ nav ul li a:hover {
 }
 
 
+.about {
+    height: 55vh;
+    padding: 20px 30px;
+
+}
+
+.about p {
+    color: #0a5648;
+    padding: 20px 300px;
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+#contact-details {
+    margin: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 50;
+}
+
+#contact-details .details li {
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+
+}
+
+#contact-details .details li {
+    font-size: 20px;
+}
+
+#contact-details .details li i {
+    margin-right: 10px;
+    color: #0a5648;
+
+}
+
+#contact-details span {
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+#contact-details h2 {
+    font-size: 32px;
+    padding: 8px 0;
+}
+
+#contact-details form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+#contact-details form input,
+#contact-details form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 7px 0px;
+    outline: none;
+    border: none;
+
+}
+
+#contact-details form button {
+    padding: 8px 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #10b394;
+    color: #E4F9F5;
+    border: none;
+}
+
+#product {
+    margin: 60px 0px;
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    width: 100%;
+}
+
+#product .prod {
+    display: flex;
+    align-content: center;
+    width: 50%;
+}
+
+#product .prod-details {
+    width: 50%;
+    font-size: 20px 0;
+
+}
+
+#product .prod img {
+    margin: 30px;
+    width: 100%;
+    border: 2px solid black;
+
+}
+
+#product .prod-details h2 {
+    font-size: 50px;
+    font-weight: 700;
+    padding: 20px 0;
+
+}
+
+#product .prod-details h4 {
+    font-size: 24px;
+}
+
+#product .prod-details p {
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+#product .prod-details .desc {
+    padding: 20px 20px 0 0;
+}
+
+#product .prod-details input {
+    border: none;
+    outline: none;
+    width: 100px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#product .prod-details button {
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-left: 20px;
+    color: #E4F9F5;
+    background: #0a5648;
+    border: none;
+    border-radius: 6px;
+
+
+}
+
+.product-banner {
+    background-color: #E4F9F5;
+}
 
 footer {
     padding: 20px 30px;

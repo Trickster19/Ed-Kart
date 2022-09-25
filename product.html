@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed-Kart Online Shopping </title>
+    <link rel="icon" type="image" href="CSS/logoicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/util.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+
+<body>
+
+
+    <!-- navbar content -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="CSS/logo.png" alt="logo ">
+            </div>
+            <ul>
+                <li> <a href="#home"> HOME</a> </li>
+                <li> <a href="contact.html"> CONTACT US</a></li>
+                <li> <a href="aboutus.html"> ABOUT US</a> </li>
+                <li class="cartBtn1"> <a href="index.html"><i class="fa-solid fa-bag-shopping cartBtn1"></i></a> </li>
+                <li>
+                    <form class="search">
+                        <input type="text" class="text" id="searchInput" placeholder="Search Here">
+                        <button class="btn" id="searchBtn"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+
+            <div class="responsive-btn">
+                <a href="index.html"><i class="fa-solid fa-bag-shopping cartBtn2"></i> </a>
+                <i class="fas fa-bars menu-btn" id="menu-btn"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="banner-txt product-banner">
+        </div>
+    </div>
+
+    <section id="product">
+
+        <div class="prod">
+            <img src="data:image/jpeg;base64,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"
+                alt="bats">
+        </div>
+        <div class="prod-details">
+            <h2>Cricket Bats</h2>
+            <p>MRP: 700 rs</p>
+            <p>discount : Min 30% Off</p>
+            <p><input type="number" name="" id="quantity"> <button>Buy</button> </p>
+            <h4>about product:</h4>
+            <p class="desc">Suitable for Soft Tennis Ball Cricket
+                Weight: 950 gms - 1050 gms, Length: 900 mm (35 inches)
+                Engineered Kashmir Willow, Trademark Singapore-Cane Dual-Shaped Handle and Premium Polyurethane Grip.
+                For the best comfort and control.
+                Superior Willow wood with thick edges and a large sweet spot for an all-round powerful batting
+                experience
+                Protective Toe Guard and Metallic Blue Bat Cover Provided</p>
+        </div>
+
+    </section>
+    <!-- main content -->
+
+
+    <footer class="All-Flex-center-align">
+        <p>Made By Mohd Haaris Qureshi | Copyright &copy; Ed-kart.com </p>
+    </footer>
+
+
+
+
+</body>
+
+</html>

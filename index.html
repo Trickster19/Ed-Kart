@@ -26,8 +26,8 @@
       </div>
       <ul>
         <li> <a href="#home"> HOME</a> </li>
-        <li> <a href="index.html"> CONTACT US</a></li>
-        <li> <a href="index.html"> ABOUT US</a> </li>
+        <li> <a href="contact.html"> CONTACT US</a></li>
+        <li> <a href="aboutus.html"> ABOUT US</a> </li>
         <li class="cartBtn1"> <a href="index.html"><i class="fa-solid fa-bag-shopping cartBtn1"></i></a> </li>
         <li>
           <form class="search">
@@ -69,7 +69,7 @@
             <div class="lines">
               <p class=".text-center my-3 itemName">Cricket Bats </p>
               <p class=".text-center my-3 discount">Min 30% Off</p>
-              <button class=".text-center my-3 buyBtn">Buy Now</button>
+              <button class=".text-center my-3 buyBtn"> <a href="product.html">Buy Now</a> </button>
 
             </div>
           </div>
@@ -396,21 +396,13 @@
         searchform.reset();
       }
       else if (value == "toys" || value == "Toys" || value == "children toys" || value == "children") {
-       
         document.getElementById("Toys").scrollIntoView({ behavior: "smooth" });
         document.querySelector("nav ul").classList.remove("active");
         document.querySelector("nav #menu-btn").classList.remove("active");
         searchform.reset();
-
-
       }
-
-      else
-       {
-     
+      else {
         alert("item not found");
-     
-        
       }
     });
 
